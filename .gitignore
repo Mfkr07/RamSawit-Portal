@@ -13,3 +13,5 @@ Thumbs.db
 # Vercel & Netlify Build Caches
 .vercel
 .netlify
+
+.vercel
