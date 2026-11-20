@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panduan Instalasi — RamSawit</title>
+  <meta name="description" content="Cara memasang APK RamSawit di Android dalam tiga langkah mudah." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20261012_v3" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+</head>
+<body>
+  <header class="topnav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="Logo RamSawit" width="46" height="46" />
+        <span class="brand-name">RamSawit</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" data-i18n="nav.home">Beranda</a>
+        <a href="fitur.html" data-i18n="nav.features">Fitur</a>
+        <a href="instalasi.html" data-i18n="nav.install">Panduan Instalasi</a>
+        <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+      </nav>
+      <div class="nav-tools">
+        <div class="search-wrap">
+          <span class="search-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+          <input class="search-input" id="searchInput" data-i18n-ph="nav.search.ph" placeholder="Cari…" autocomplete="off" />
+          <div class="search-results" id="searchResults"></div>
+        </div>
+        <button class="lang-btn" id="langBtn" aria-label="Ganti bahasa">EN</button>
+        <button class="icon-btn" id="themeBtn" aria-label="Mode gelap / terang">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow reveal" data-i18n="inst.eyebrow">Panduan</span>
+        <h1 class="reveal d1" data-i18n="inst.title">Panduan Pemasangan &amp; Menjalankan Aplikasi</h1>
+        <p class="lead reveal d2" data-i18n="inst.sub">Langkah mudah memasang di ponsel Android atau menjalankan di komputer Windows.</p>
+      </div>
+    </section>
+
+    <!-- PANDUAN ANDROID -->
+    <section class="container section" style="padding-top:20px">
+      <div class="section-head">
+        <span class="eyebrow reveal">Platform Mobile</span>
+        <h2 class="reveal d1" style="display:flex; align-items:center; gap:10px;">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--primary);"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          <span data-i18n="inst.and_title">Untuk Ponsel Android (APK)</span>
+        </h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <h3 data-i18n="inst.1t">Unduh file APK Resmi</h3>
+          <p data-i18n="inst.1d">Ketuk tombol unduh di bawah ini. File paket rilis mandiri (v2.5.4) akan tersimpan di folder Unduhan perangkat Anda.</p>
+          <div style="margin-top:18px">
+            <a href="downloads/RamSawit_V.2.5.4.apk" download class="btn btn-primary btn-block">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              <span>Unduh APK v2.5.4 (~68.6 MB)</span>
+            </a>
+          </div>
+        </div>
+        <div class="step reveal d1">
+          <div class="step-num">02</div>
+          <h3 data-i18n="inst.2t">Izinkan sumber tidak dikenal</h3>
+          <p data-i18n="inst.2d">Buka Pengaturan → Keamanan → aktifkan “Instal aplikasi yang tidak dikenal” untuk browser/Chrome. Cukup sekali saja.</p>
+        </div>
+        <div class="step reveal d2">
+          <div class="step-num">03</div>
+          <h3 data-i18n="inst.3t">Buka &amp; pasang</h3>
+          <p data-i18n="inst.3d">Ketuk file APK yang sudah diunduh, lalu ketuk “Instal”. Setelah selesai, ikon RamSawit muncul di layar utama.</p>
+        </div>
+      </div>
+      <p class="note reveal" data-i18n="inst.note">Tips Android: jika muncul peringatan Play Protect, pilih “Tetap instal” — file APK ini langsung dari pengembang resmi RamSawit.</p>
+    </section>
+
+    <!-- PANDUAN WINDOWS -->
+    <section class="container section" style="padding-top:30px">
+      <div class="section-head">
+        <span class="eyebrow reveal">Platform Desktop</span>
+        <h2 class="reveal d1" style="display:flex; align-items:center; gap:10px;">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--primary);"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span data-i18n="inst.win_title">Untuk Komputer Windows (Desktop 64-bit)</span>
+        </h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <h3 data-i18n="inst.win1t">Unduh Paket Aplikasi Windows</h3>
+          <p data-i18n="inst.win1d">Unduh paket RamSawit_V.2.5.4_Windows.zip (~15.9 MB) yang sudah dilengkapi runtime Visual C++ dan database SQLite.</p>
+          <div style="margin-top:18px">
+            <a href="downloads/RamSawit_V.2.5.4_Windows.zip" download class="btn btn-primary btn-block">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Unduh Paket Windows (.ZIP 15.9 MB)</span>
+            </a>
+          </div>
+        </div>
+        <div class="step reveal d1">
+          <div class="step-num">02</div>
+          <h3 data-i18n="inst.win2t">Ekstrak Berkas ZIP</h3>
+          <p data-i18n="inst.win2d">Klik kanan pada file ZIP yang telah diunduh, lalu pilih "Extract All". Anda akan mendapatkan folder mandiri yang berisi seluruh komponen aplikasi.</p>
+        </div>
+        <div class="step reveal d2">
+          <div class="step-num">03</div>
+          <h3 data-i18n="inst.win3t">Buka &amp; Siap Pakai</h3>
+          <p data-i18n="inst.win3d">Jalankan file <code>RamSawit.exe</code> di dalam folder. Aplikasi RamSawit langsung siap dipakai tanpa perlu instalasi rumit.</p>
+        </div>
+      </div>
+      <p class="note reveal" data-i18n="inst.win_note">Tips Windows: jika muncul dialog perlindungan Windows SmartScreen saat pertama kali dibuka, klik “More info” lalu pilih “Run anyway”.</p>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container">
+        <h2 class="reveal" data-i18n="cta.title">Siap merapikan operasional ram sawitmu?</h2>
+        <p class="reveal d1" data-i18n="cta.sub">Unduh sekarang, catat transaksi pertama dalam hitungan menit.</p>
+        <div class="cta-actions reveal d2">
+          <a href="downloads/RamSawit_V.2.5.4.apk" download class="cta-btn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            <span data-i18n="cta.btn_and">Unduh APK Android</span>
+          </a>
+          <a href="downloads/RamSawit_V.2.5.4_Windows.zip" download class="cta-btn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span data-i18n="cta.btn_win">Unduh Paket Windows</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px;">
+            <img src="images/logo.png" alt="Logo RamSawit" width="56" height="56" />
+            <span class="brand-name" style="font-size:1.4rem;font-weight:800;">RamSawit</span>
+          </div>
+          <p data-i18n="ft.tag">Aplikasi kasir &amp; manajemen operasional ram timbangan kelapa sawit.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="ft.pages">Halaman</h4>
+          <a href="index.html" data-i18n="nav.home">Beranda</a>
+          <a href="fitur.html" data-i18n="nav.features">Fitur</a>
+          <a href="instalasi.html" data-i18n="nav.install">Panduan Instalasi</a>
+          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+          <a href="privasi.html" data-i18n="nav.privacy">Kebijakan Privasi</a>
+          <a href="syarat.html" data-i18n="nav.terms">Syarat Penggunaan</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="ft.social">Dokumentasi &amp; Sumber</h4>
+          <a href="https://github.com/Mfkr07/Kasir_TBS_Sawit" target="_blank" rel="noopener">GitHub Repository</a>
+          <a href="index.html#video">Demo Video</a>
+          <a href="fitur.html">Dokumentasi Fitur &amp; Visual</a>
+          <a href="changelog.html">Catatan Rilis (v2.5.4)</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="ft.contact">Kontak Pengembang</h4>
+          <a href="https://t.me/mfkr07" target="_blank" rel="noopener">Telegram: @mfkr07</a>
+          <a href="mailto:calonmaou@gmail.com">calonmaou@gmail.com</a>
+          <span>Dukungan Operasional Ram Sawit</span>
+          <span>Jambi, Indonesia</span>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <span>© 2026 RamSawit · v2.5.4</span>
+        <span data-i18n="ft.rights">Hak cipta dilindungi.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

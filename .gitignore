@@ -1,0 +1,15 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Editor & IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Vercel & Netlify Build Caches
+.vercel
+.netlify

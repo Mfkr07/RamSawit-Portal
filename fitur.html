@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitur — RamSawit</title>
+  <meta name="description" content="Delapan modul RamSawit: kasir TBS, penjualan pabrik, AI Analytics, dashboard, dana, pengeluaran, laporan, dan multi-peran." />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20261012_v3" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+</head>
+<body>
+  <header class="topnav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="Logo RamSawit" width="46" height="46" />
+        <span class="brand-name">RamSawit</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" data-i18n="nav.home">Beranda</a>
+        <a href="fitur.html" data-i18n="nav.features">Fitur</a>
+        <a href="instalasi.html" data-i18n="nav.install">Panduan Instalasi</a>
+        <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+      </nav>
+      <div class="nav-tools">
+        <div class="search-wrap">
+          <span class="search-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+          <input class="search-input" id="searchInput" data-i18n-ph="nav.search.ph" placeholder="Cari…" autocomplete="off" />
+          <div class="search-results" id="searchResults"></div>
+        </div>
+        <button class="lang-btn" id="langBtn" aria-label="Ganti bahasa">EN</button>
+        <button class="icon-btn" id="themeBtn" aria-label="Mode gelap / terang">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow reveal" data-i18n="feat.eyebrow">Modul aplikasi</span>
+        <h1 class="reveal d1" data-i18n="feat.title">Delapan modul, satu alur kerja</h1>
+        <p class="lead reveal d2" data-i18n="feat.sub">Setiap modul dirancang untuk satu bagian operasional ram — saling terhubung otomatis.</p>
+      </div>
+    </section>
+
+    <section class="container section" id="modul-visual" style="padding-top:20px">
+      <div class="mod-grid">
+        <article class="card mod-card reveal">
+          <div class="mod-card-header">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" style="color:var(--primary);"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="m1.t">Kasir Transaksi TBS</h3>
+              <p data-i18n="m1.d">Pencatatan pembelian TBS multi-item dinamis dengan kalkulasi potongan timbangan otomatis.</p>
+            </div>
+          </div>
+          <div class="mod-preview">
+            <img src="screenshots/transaksi.jpg" alt="Form Transaksi TBS RamSawit" loading="lazy" />
+          </div>
+          <ul>
+            <li data-i18n="m1.f1">Multi-item: ragam jenis buah, berat kotor, potongan %, dan harga/kg</li>
+            <li data-i18n="m1.f2">Kalkulasi instan berat bersih timbangan &amp; total bayar petani</li>
+            <li data-i18n="m1.f3">Metode tunai / transfer serta cetak struk nota timbang</li>
+          </ul>
+        </article>
+
+        <article class="card mod-card reveal d1">
+          <div class="mod-card-header">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" style="color:var(--primary);"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="m2.t">Penjualan ke Pabrik</h3>
+              <p data-i18n="m2.d">Alur logistik 2 fase terintegrasi dari RAM hingga slip timbang PKS.</p>
+            </div>
+          </div>
+          <div class="mod-preview">
+            <img src="screenshots/penjualan_pabrik_demo.png" alt="Form Pengiriman dan Penjualan ke Pabrik RamSawit" loading="lazy" />
+          </div>
+          <ul>
+            <li data-i18n="m2.f1">Fase 1 (Logistik RAM): PKS tujuan, sopir, nopol armada, &amp; berat kirim</li>
+            <li data-i18n="m2.f2">Fase 2 (Slip PKS): berat sampai, afkir ditolak, sortasi %, &amp; audit susut jalan</li>
+            <li data-i18n="m2.f3">Perhitungan pendapatan bersih otomatis setelah penalti sortasi &amp; biaya</li>
+          </ul>
+        </article>
+
+        <article class="card mod-card reveal">
+          <div class="mod-card-header">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" style="color:var(--primary);"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="m3.t">AI Analytics Advisor</h3>
+              <p data-i18n="m3.d">Konsultasi bisnis langsung dengan data operasionalmu.</p>
+            </div>
+          </div>
+          <div class="mod-preview">
+            <img src="screenshots/analitik_ai_fase2_verified.png" alt="AI Analytics Advisor RamSawit" loading="lazy" />
+          </div>
+          <ul>
+            <li data-i18n="m3.f1">Tanya jawab natural via chat</li>
+            <li data-i18n="m3.f2">Rekomendasi harga beli aman</li>
+            <li data-i18n="m3.f3">Deteksi anomali sortasi</li>
+          </ul>
+        </article>
+
+        <article class="card mod-card reveal d1">
+          <div class="mod-card-header">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" style="color:var(--primary);"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="m4.t">Dashboard Real-time</h3>
+              <p data-i18n="m4.d">Semua angka penting terhitung otomatis dari database.</p>
+            </div>
+          </div>
+          <div class="mod-preview">
+            <img src="screenshots/dashboard_admin_supabase_aktif.png" alt="Dashboard Terpadu RamSawit" loading="lazy" />
+          </div>
+          <ul>
+            <li data-i18n="m4.f1">Grafik tren pembelian vs penjualan</li>
+            <li data-i18n="m4.f2">Skor margin &amp; laba bersih</li>
+            <li data-i18n="m4.f3">Filter periode fleksibel</li>
+          </ul>
+        </article>
+
+        <article class="card mod-card reveal">
+          <div class="mod-card-header">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" style="color:var(--primary);"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="m5.t">Dana &amp; Saldo Modal</h3>
+              <p data-i18n="m5.d">Pantau modal yang dipakai untuk pembelian harian.</p>
+            </div>
+          </div>
+          <div class="mod-preview">
+            <img src="screenshots/saldo_modal_demo.png" alt="Pemantauan Saldo Kas dan Dana Modal RamSawit" loading="lazy" />
+          </div>
+          <ul>
+            <li data-i18n="m5.f1">Kartu saldo &amp; riwayat mutasi</li>
+            <li data-i18n="m5.f2">Filter periode kustom</li>
+            <li data-i18n="m5.f3">Stok kas selalu terpantau</li>
+          </ul>
+        </article>
+
+        <article class="card mod-card reveal d1">
+          <div class="mod-card-header">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" style="color:var(--primary);"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="m6.t">Pengeluaran</h3>
+              <p data-i18n="m6.d">Catat biaya operasional harian dengan rapi.</p>
+            </div>
+          </div>
+          <div class="mod-preview">
+            <img src="screenshots/pengeluaran_operasional_demo.png" alt="Pencatatan dan Analitik Pengeluaran Operasional RamSawit" loading="lazy" />
+          </div>
+          <ul>
+            <li data-i18n="m6.f1">Kategori BBM, upah, perawatan</li>
+            <li data-i18n="m6.f2">Rekap per periode</li>
+            <li data-i18n="m6.f3">Masuk hitungan laba bersih</li>
+          </ul>
+        </article>
+
+        <article class="card mod-card reveal">
+          <div class="mod-card-header">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" style="color:var(--primary);"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="m7.t">Laporan Excel &amp; PDF</h3>
+              <p data-i18n="m7.d">Ekspor siap cetak untuk arsip &amp; audit.</p>
+            </div>
+          </div>
+          <div class="mod-preview">
+            <img src="screenshots/laporan_export_demo.png" alt="Ekspor Laporan Transaksi dan Rekap Excel & PDF" loading="lazy" />
+          </div>
+          <ul>
+            <li data-i18n="m7.f1">Laporan pendapatan (admin)</li>
+            <li data-i18n="m7.f2">Laporan pengiriman pabrik</li>
+            <li data-i18n="m7.f3">Format Excel &amp; PDF</li>
+          </ul>
+        </article>
+
+        <article class="card mod-card reveal d1">
+          <div class="mod-card-header">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.8" style="color:var(--primary);"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="m8.t">Multi-peran Aman</h3>
+              <p data-i18n="m8.d">Admin dan Kasir dengan hak akses berbeda.</p>
+            </div>
+          </div>
+          <div class="mod-preview">
+            <img src="screenshots/multi_peran_aman.png" alt="Keamanan Login dan Multi Peran RamSawit" loading="lazy" />
+          </div>
+          <ul>
+            <li data-i18n="m8.f1">Row Level Security di database</li>
+            <li data-i18n="m8.f2">Jejak audit setiap mutasi</li>
+            <li data-i18n="m8.f3">Transaksi void, bukan hapus</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container">
+        <h2 class="reveal" data-i18n="cta.title">Siap merapikan operasional ram sawitmu?</h2>
+        <p class="reveal d1" data-i18n="cta.sub">Unduh sekarang, catat transaksi pertama dalam hitungan menit.</p>
+        <div class="cta-actions reveal d2">
+          <a href="downloads/RamSawit_V.2.5.4.apk" download class="cta-btn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            <span data-i18n="cta.btn_and">Unduh APK Android</span>
+          </a>
+          <a href="downloads/RamSawit_V.2.5.4_Windows.zip" download class="cta-btn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span data-i18n="cta.btn_win">Unduh Aplikasi Windows</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px;">
+            <img src="images/logo.png" alt="Logo RamSawit" width="56" height="56" />
+            <span class="brand-name" style="font-size:1.4rem;font-weight:800;">RamSawit</span>
+          </div>
+          <p data-i18n="ft.tag">Aplikasi kasir &amp; manajemen operasional ram timbangan kelapa sawit.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="ft.pages">Halaman</h4>
+          <a href="index.html" data-i18n="nav.home">Beranda</a>
+          <a href="fitur.html" data-i18n="nav.features">Fitur</a>
+          <a href="instalasi.html" data-i18n="nav.install">Panduan Instalasi</a>
+          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+          <a href="privasi.html" data-i18n="nav.privacy">Kebijakan Privasi</a>
+          <a href="syarat.html" data-i18n="nav.terms">Syarat Penggunaan</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="ft.social">Dokumentasi &amp; Sumber</h4>
+          <a href="https://github.com/Mfkr07/Kasir_TBS_Sawit" target="_blank" rel="noopener">GitHub Repository</a>
+          <a href="index.html#video">Demo Video</a>
+          <a href="fitur.html">Dokumentasi Fitur &amp; Visual</a>
+          <a href="changelog.html">Catatan Rilis (v2.5.4)</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="ft.contact">Kontak Pengembang</h4>
+          <a href="https://t.me/mfkr07" target="_blank" rel="noopener">Telegram: @mfkr07</a>
+          <a href="mailto:calonmaou@gmail.com">calonmaou@gmail.com</a>
+          <span>Dukungan Operasional Ram Sawit</span>
+          <span>Jambi, Indonesia</span>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <span>© 2026 RamSawit · v2.5.4</span>
+        <span data-i18n="ft.rights">Hak cipta dilindungi.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

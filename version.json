@@ -1,0 +1,33 @@
+{
+  "latest_version": "2.5.4",
+  "version_code": 254,
+  "min_supported_version": "2.0.0",
+  "release_date": "2026-11-20",
+  "title": "RamSawit v2.5.4 Stabil",
+  "changelog": [
+    "Sinkronisasi transaksi tunai vs non-tunai (transfer) pada kas ramp & saldo",
+    "Integrasi modul Laporan Pendapatan & Laba Bersih harian",
+    "Visualisasi Pie Chart metode pembayaran kasir di dashboard",
+    "Peningkatan generator ekspor laporan Excel",
+    "Arsitektur offline-first lokal Drift SQLite dan multi-tenant BYOD Supabase",
+    "Integrasi AI Analytics Advisor untuk analisis finansial & peramalan TBS"
+  ],
+  "release_notes": {
+    "id": "Pembaruan v2.5.4 menghadirkan sinkronisasi transaksi kasir tunai & non-tunai, laporan laba bersih harian, ekspor Excel, engine offline-first Drift SQLite lokal, dan AI Analytics.",
+    "en": "Version 2.5.4 brings cash vs non-cash cashier payment synchronization, daily net income report, enhanced Excel export, offline-first Drift SQLite engine, and AI Analytics."
+  },
+  "downloads": {
+    "android": {
+      "url": "downloads/RamSawit_V.2.5.4.apk",
+      "filename": "RamSawit_V.2.5.4.apk",
+      "file_size": "68.6 MB",
+      "mime_type": "application/vnd.android.package-archive"
+    },
+    "windows": {
+      "url": "downloads/RamSawit_V.2.5.4_Windows.zip",
+      "filename": "RamSawit_V.2.5.4_Windows.zip",
+      "file_size": "15.9 MB",
+      "mime_type": "application/zip"
+    }
+  }
+}
