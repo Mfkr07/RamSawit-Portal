@@ -1,26 +1,25 @@
 {
-  "latest_version": "2.5.4",
-  "version_code": 254,
+  "latest_version": "2.5.9",
+  "version_code": 259,
   "min_supported_version": "2.0.0",
-  "release_date": "2026-11-20",
-  "title": "RamSawit v2.5.4 Stabil",
+  "release_date": "2026-11-24",
+  "title": "RamSawit v2.5.9 Stabil (ARM64 Ringan)",
   "changelog": [
-    "Sinkronisasi transaksi tunai vs non-tunai (transfer) pada kas ramp & saldo",
-    "Integrasi modul Laporan Pendapatan & Laba Bersih harian",
-    "Visualisasi Pie Chart metode pembayaran kasir di dashboard",
-    "Peningkatan generator ekspor laporan Excel",
-    "Arsitektur offline-first lokal Drift SQLite dan multi-tenant BYOD Supabase",
-    "Integrasi AI Analytics Advisor untuk analisis finansial & peramalan TBS"
+    "Rilis paket APK arsitektur ARM64 (arm64-v8a) yang 60% lebih ringan (27.1 MB vs 68.6 MB)",
+    "Penambahan tombol refresh riwayat percakapan asisten AI di ponsel Android",
+    "Peningkatan stabilitas koneksi AI dengan proteksi timeout, auto-retry, dan isolasi soket",
+    "Dukungan resmi Cloudflare Tunnel dan Google Gemini Direct API",
+    "Agentic Tool Calling membaca database multi-periode secara real-time"
   ],
   "release_notes": {
-    "id": "Pembaruan v2.5.4 menghadirkan sinkronisasi transaksi kasir tunai & non-tunai, laporan laba bersih harian, ekspor Excel, engine offline-first Drift SQLite lokal, dan AI Analytics.",
-    "en": "Version 2.5.4 brings cash vs non-cash cashier payment synchronization, daily net income report, enhanced Excel export, offline-first Drift SQLite engine, and AI Analytics."
+    "id": "Pembaruan v2.5.9 menghadirkan paket APK ARM64 yang jauh lebih ringan (hanya 27.1 MB), tombol refresh percakapan AI di ponsel, serta koneksi AI yang stabil dan tahan banting.",
+    "en": "Version 2.5.9 delivers a lightweight ARM64 APK (~27.1 MB), a mobile chat refresh button, and rock-solid AI connection stability."
   },
   "downloads": {
     "android": {
-      "url": "downloads/RamSawit_V.2.5.4.apk",
-      "filename": "RamSawit_V.2.5.4.apk",
-      "file_size": "68.6 MB",
+      "url": "downloads/RamSawit_V.2.5.9_arm64.apk",
+      "filename": "RamSawit_V.2.5.9_arm64.apk",
+      "file_size": "27.1 MB",
       "mime_type": "application/vnd.android.package-archive"
     },
     "windows": {
